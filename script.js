@@ -34,6 +34,7 @@ function getData(){
     setTimeout(() => {
       loader.style.display = 'none'
       content.style.display = 'flex'
+      document.body.style.display = null
   }, 300);
   })
 }
