@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./admin.css">
+  <link rel="icon" type="image/x-icon" href="./img/logo.ico">
+
+  <title>Admin</title>
+</head>
+
+<body>
+  <div class="form">
+    <div class="field file">
+      <label for="userAvatar" class="label avatar">Upload Avatar</label>
+      <img id="avatar-output" src="" alt="" class="preview-avatar">
+      <input type="file" id="userAvatar" accept="image/*" />
+    </div>
+
+    <div class="field">
+      <label for="userName" class="label">User name</label>
+      <input type="text" id="userName">
+    </div>
+
+    <div class="field">
+      <label for="paidMembers" class="label">Paid members</label>
+      <input type="text" id="paidMembers">
+    </div>
+
+    <div class="field">
+      <label for="name" class="label">MRR</label>
+      <input type="text" id="mmr">
+    </div>
+
+    <div class="field">
+      <label for="churn" class="label">Churn (last 30d)
+      </label>
+      <input type="text" id="churn">
+    </div>
+
+    <div class="field">
+      <label for="aboutPageVisitors" class="label">About page visitors
+      </label>
+      <input type="text" id="aboutPageVisitors">
+    </div>
+
+    <div class="field">
+      <label for="signups" class="label">Signups</label>
+      <input type="text" id="signups">
+    </div>
+
+    <div class="field">
+      <label for="conversioRate" class="label">Conversion rate</label>
+      <input type="text" id="conversioRate">
+    </div>
+
+    <div class="field">
+      <label for="courseSales" class="label">Course sales
+      </label>
+      <input type="text" id="courseSales">
+    </div>
+
+    <div class="field">
+      <label for="trialsProgress" class="label">Trials in progress</label>
+      <input type="text" id="trialsProgress">
+    </div>
+
+    <div class="field">
+      <label for="trialConversionRate" class="label">Trial conversion rate</label>
+      <input type="text" id="trialConversionRate">
+    </div>
+  </div>
+
+  <script src="./admin.js"></script>
+</body>
+
+</html>
