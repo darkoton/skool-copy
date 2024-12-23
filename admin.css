@@ -173,7 +173,7 @@ body {
   display: none;
 }
 
-.avatar-output {
+#avatar-output {
   width: 100%;
   max-width: 200px;
 }

@@ -10,7 +10,10 @@ function getData(){
     method: "GET"
   }).then(r => r.json()).then((data)=>{
     data.forEach(field => {
-      const replaceItem = document.querySelector(`#${field.name}`)
+      const replaceItems = document.querySelectorAll(`#${field.name}`)
+      
+      replaceItems.forEach(replaceItem=>{
+      
       if (field.name === 'userAvatar') {
         if (field.value) {
           const img = document.createElement('img')
@@ -19,10 +22,13 @@ function getData(){
   
           replaceItem.innerHTML = ''
           replaceItem.appendChild(img) 
+        }else{
+          replaceItem.textContent = data[0].value[0]
         }
       }else{
         replaceItem.textContent = field.value
       }
+    })
       });
   }).then(()=>{
     setTimeout(() => {
